@@ -1,0 +1,9 @@
+[wrap-file]
+directory = munt-libmt32emu_2_4_2
+
+source_url = https://github.com/munt/munt/archive/libmt32emu_2_4_2.tar.gz
+source_filename = libmt32emu_2_4_2.tar.gz
+source_hash = 5ba49f416dc1a076ea73e2b0136ec076b0d86537b47125c104e1e8c3716efb3c
+
+[provide]
+mt32emu = mt32emu_dep
