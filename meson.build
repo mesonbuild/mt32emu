@@ -1,6 +1,7 @@
 project('mt32emu', 'cpp',
         version : '2.4.2',
         license : 'LGPL-2.1-or-later',
+        meson_version : '>=0.53.0',
         default_options : 'b_ndebug=if-release')
 
 mt32emu_versions = meson.project_version().split('.')
