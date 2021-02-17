@@ -23,13 +23,13 @@ c_headers = [
 # These two maps exist only, so we can generate a new directory containing
 # all the headers later on.
 #
-mt32emu_header_map = {}
+mt32emu_header_map = []
 foreach header : common_headers + cpp_headers
-  mt32emu_header_map += { header : files(header) }
+  mt32emu_header_map += [ [ files(header), header ] ]
 endforeach
-mt32emu_c_header_map = {}
+mt32emu_c_header_map = []
 foreach header : c_headers
-  mt32emu_c_header_map += { header : files('c_interface' / header) }
+  mt32emu_c_header_map += [ [ files('c_interface' / header), header ] ]
 endforeach
 
 mt32emu_sources = files(
